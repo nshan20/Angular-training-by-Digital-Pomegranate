@@ -5,7 +5,7 @@ document.querySelector(".arr").innerHTML = arr;
 let clickMin = document.querySelector(".min");
 let clickMax = document.querySelector(".max");
 
-function maxElement (list, minMax){
+function subtract (list, minMax){
     let max = 0;
     let min = list[0];
     for(let i = 0; i < list.length; i++){
@@ -27,8 +27,8 @@ function maxElement (list, minMax){
 
 
 clickMin.addEventListener("click", function (){
-    rezult.innerHTML=maxElement(arr,"min");
+    rezult.innerHTML=subtract(arr,"min");
 });
 clickMax.addEventListener("click", function (){
-    rezult.innerHTML=maxElement(arr,"max");
+    rezult.innerHTML=subtract(arr,"max");
 });
