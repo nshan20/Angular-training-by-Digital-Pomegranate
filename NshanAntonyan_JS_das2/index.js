@@ -25,7 +25,6 @@ function subtract (list, minMax){
 
 }
 
-
 clickMin.addEventListener("click", function (){
     rezult.innerHTML=subtract(arr,"min");
 });
