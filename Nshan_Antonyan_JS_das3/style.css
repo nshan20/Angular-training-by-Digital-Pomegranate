@@ -1,0 +1,26 @@
+body{
+    background: aqua;
+}
+.blogCart{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.cart{
+    width: 100px;
+    height: 200px;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 15px;
+    margin: 15px;
+}
+.cart img{
+    width: 100px;
+}
+.cart p, h3{
+    margin: auto;
+}
