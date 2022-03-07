@@ -1,7 +1,7 @@
-//1
-// let value = prompt();
+// 1
+// let value = prompt("bar", "hello");
 // function reverseString(str) {
-//     var newString = "";
+//     let newString = "";
 //    for (let i = str.length-1; i >= 0; i--){
 //        newString += str[i];
 //    }
@@ -11,7 +11,7 @@
 //-----------------------------------------------------------
 //2
 // let a = 5;
-// let b = 7;
+// let b = 4;
 // let c = 6;
 //
 // function triangle(a,b,c){
@@ -24,7 +24,7 @@
 // triangle(a,b,c);
 //--------------------------------------------------------
 //3
-// let array  =  [1, 2, 2, 2, 3, 4, 2, 2, 3, 3, 4, 5];
+// let array  =  [1, 2, 2, 6,2, 3, 4, 2,60, 2, 3, 3, 4, 5];
 // let result = [];
 //
 // function sortingArr(arr){
