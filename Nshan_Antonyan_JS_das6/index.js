@@ -77,3 +77,29 @@
 // }
 // numberTest(8,9);
 
+//---------------------------------------------------------------
+
+// let arr = [
+//         [ 1, 2, 3, 4, 5 ],
+//         [ 5, 6, 7, 8, 9 ],
+//         [ 20, 21, 34, 56, 100 ]
+// ];
+//
+// function filterArry(arr){
+//         let min = 0;
+//         let mas ;
+//         for (let i = 0; i<arr.length; i++){
+//                 let sum =arr[i][0];
+//                 mas = arr[i];
+//                 for (let j = 0; j<mas.length;j++){
+//                         if (sum > mas[j]){
+//                                 sum = mas[j];
+//                         }
+//                 }
+//                 mas="";
+//                 min += sum;
+//         }
+//         console.log(min);
+// }
+//
+// filterArry(arr);
