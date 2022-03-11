@@ -42,6 +42,8 @@
 // }
 // stringLeng(str);
 
+
+
 //-----------------------------------------------
 
 //2
@@ -58,6 +60,7 @@
 // }
 // test();
 // alert(arr);
+
 
 //------------------------------------------------
 
@@ -79,6 +82,7 @@
 
 //---------------------------------------------------------------
 
+//4
 // let arr = [
 //         [ 1, 2, 3, 4, 5 ],
 //         [ 5, 6, 7, 8, 9 ],
@@ -103,3 +107,82 @@
 // }
 //
 // filterArry(arr);
+
+//------------------------------------------------------------------
+
+
+var books = [
+    { type: 'kensabanutyun', name: 'Kensabanutyan 2-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 3-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 4-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 5-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 6-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 7-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 8-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 9-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 10-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 11-rd dasarani dasagirq' },
+    { type: 'kensabanutyun', name: 'Kensabanutyan 12-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 2-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 3-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 4-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 5-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 6-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 7-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 8-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 9-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 10-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 11-rd dasarani dasagirq' },
+    { type: 'ashxaragrutyun', name: 'Ashxaragrutyan 12-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 2-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 3-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 4-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 5-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 6-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 7-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 8-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 9-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 10-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 11-rd dasarani dasagirq' },
+    { type: 'hanrahashiv', name: 'Hanrahashvi 12-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 2-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 3-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 4-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 5-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 6-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 7-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 8-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 9-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 10-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 11-rd dasarani dasagirq' },
+    { type: 'erkrachaputyun', name: 'Erkrachaputyan 12-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 2-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 3-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 4-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 5-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 6-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 7-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 8-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 9-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 10-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 11-rd dasarani dasagirq' },
+    { type: 'mayreni', name: 'Hayoc Lezvi 12-rd dasarani dasagirq' },
+];
+
+let arrTitle = ["kensabanutyun","ashxaragrutyun","hanrahashiv","erkrachaputyun","mayreni"];
+let sortedBooks = {};
+let sumar ="";
+
+function filterF(){
+    for (let j =0; j <arrTitle.length; j++){
+        for (let i = 0; i <books.length; i++){
+            if (arrTitle[j] === books[i].type){
+                sumar += [books[i].name];
+            }
+        }
+        sortedBooks[arrTitle[j]] = [sumar];
+        sumar="";
+    }
+}
+filterF()
+console.log(sortedBooks);
