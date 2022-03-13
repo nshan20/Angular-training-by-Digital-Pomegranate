@@ -1,5 +1,5 @@
 let arry = [];
-function makeRand() {
+function loto() {
     let usedNumbers = [];
     return function f() {
         if (usedNumbers.length === 100) {
@@ -20,7 +20,7 @@ function makeRand() {
 
 setInterval(()=>{
     if (arry.length < 100){
-        arry.push(makeRand()());
+        arry.push(loto()());
         console.log(arry);
     }else {
         null;
