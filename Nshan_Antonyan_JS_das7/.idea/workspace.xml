@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53cde0a5-5f2d-4d40-a66f-f2b2acc08f2e" name="Default Changelist" comment="" />
+    <list default="true" id="e80398fb-d4a3-4e01-99e5-b21a26a9cdad" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="269G2p2pgAiOgntb7RSkoZhsVyr" />
+  <component name="ProjectId" id="26IOlSOC7dEXFnMd0Bo50M9pHqJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -29,32 +29,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nshan_Antonyan_JS_das7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="53cde0a5-5f2d-4d40-a66f-f2b2acc08f2e" name="Default Changelist" comment="" />
-      <created>1646828183815</created>
+      <changelist id="e80398fb-d4a3-4e01-99e5-b21a26a9cdad" name="Default Changelist" comment="" />
+      <created>1647107784888</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1646828183815</updated>
-      <workItem from="1646828184977" duration="9000" />
-      <workItem from="1646834887609" duration="12348000" />
-      <workItem from="1646914481423" duration="5182000" />
-      <workItem from="1646931924312" duration="1179000" />
-      <workItem from="1646990446922" duration="2337000" />
-      <workItem from="1646996519324" duration="26000" />
-      <workItem from="1647001783733" duration="8961000" />
-      <workItem from="1647013613049" duration="9010000" />
-      <workItem from="1647072298467" duration="1626000" />
-      <workItem from="1647106268893" duration="1177000" />
+      <updated>1647107784888</updated>
+      <workItem from="1647107786098" duration="1159000" />
+      <workItem from="1647180581545" duration="24260000" />
     </task>
     <servers />
   </component>
