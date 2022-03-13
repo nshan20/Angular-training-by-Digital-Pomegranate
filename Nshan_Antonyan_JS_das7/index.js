@@ -15,8 +15,7 @@ function loto() {
         return num;
     }
 
-}
-// let func = makeRand();
+};
 
 setInterval(()=>{
     if (arry.length < 100){
