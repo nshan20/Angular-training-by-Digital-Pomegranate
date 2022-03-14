@@ -2,10 +2,10 @@ let arry = [];
 function loto() {
     let usedNumbers = [];
     return function f() {
-        if (usedNumbers.length === 10) {
+        if (usedNumbers.length === 100) {
             return;
         }
-        let num = Math.floor(Math.random() * 10) + 1;
+        let num = Math.floor(Math.random() * 100) + 1;
         for (let i = 0; i < usedNumbers.length; i++) {
             if (num === usedNumbers[i]) return f();
         }
@@ -17,8 +17,10 @@ function loto() {
 let func = loto();
 
 setInterval(()=>{
-    if (arry.length < 10){
+    if (arry.length < 100){
         arry.push(func());
-        console.log(arry);
+        if(arry.length === 100){
+            console.log(arry);
+        }
     }
-},1000);
+},10);
