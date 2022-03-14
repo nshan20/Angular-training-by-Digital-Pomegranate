@@ -22,5 +22,3 @@ setInterval(()=>{
         console.log(arry);
     }
 },1000);
-
-console.log(arry);
