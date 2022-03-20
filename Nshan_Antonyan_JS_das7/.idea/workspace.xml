@@ -12,6 +12,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -30,10 +31,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -49,6 +53,27 @@
       <workItem from="1647206859432" duration="29000" />
       <workItem from="1647206962327" duration="188000" />
       <workItem from="1647242215476" duration="1929000" />
+      <workItem from="1647256099420" duration="1911000" />
+      <workItem from="1647266390177" duration="1715000" />
+      <workItem from="1647285957571" duration="3220000" />
+      <workItem from="1647338236535" duration="2475000" />
+      <workItem from="1647345686805" duration="9771000" />
+      <workItem from="1647357963888" duration="6128000" />
+      <workItem from="1647366868622" duration="7284000" />
+      <workItem from="1647375724751" duration="1662000" />
+      <workItem from="1647413199969" duration="1573000" />
+      <workItem from="1647417079374" duration="9332000" />
+      <workItem from="1647451549962" duration="854000" />
+      <workItem from="1647523277923" duration="2799000" />
+      <workItem from="1647545933157" duration="1719000" />
+      <workItem from="1647594786002" duration="3344000" />
+      <workItem from="1647612443212" duration="1883000" />
+      <workItem from="1647615770700" duration="9129000" />
+      <workItem from="1647632042282" duration="6716000" />
+      <workItem from="1647683708193" duration="5552000" />
+      <workItem from="1647694788086" duration="10110000" />
+      <workItem from="1647710628459" duration="8402000" />
+      <workItem from="1647771699913" duration="2741000" />
     </task>
     <servers />
   </component>
