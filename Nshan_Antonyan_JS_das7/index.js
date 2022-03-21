@@ -31,7 +31,7 @@ let intervalRandom = setInterval(() => {
     }else {
         clearInterval(intervalRandom);
     }
-}, 100);
+}, 1000);
 
 
 //-----------------------------------
@@ -124,10 +124,9 @@ function decorationDiv(){
             //------------------
             setInterval(()=>{
                 if (listArr[i][j] === arryG){
-                    // console.log(blog.innerHTML);
-                    blog.style.background = "red";
+                    blog.className += ' activ';
                 }
-                },100);
+                },1000);
         }
     }
     console.log("----------");
@@ -152,7 +151,7 @@ function aeh() {
             clearInterval(intervalRandom);
             alert(" xaxi verj ");
         }
-    }, 100);
+    }, 1000);
 }
 aeh();
 aeh();
