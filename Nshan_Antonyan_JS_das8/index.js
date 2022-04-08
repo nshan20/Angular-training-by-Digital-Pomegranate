@@ -47,22 +47,41 @@
 //-----------------------------------------
 
 // let a =[1,2,3,4,5,6,7,8,9,10];
-// a.splice(2,1,);
+// a.splice(1,1,"nshan");
 // console.log(a);
 
-var arr = [1,2,3,4,5,6,7,8,9,10];
-
-function stringSlice( string, begin, end ) {
-    let newString = '';
-
-    end = end || string.length ;
-
-    for(let i = begin; i < end; i++) {
-        newString += string[i];
-    }
-
-    return newString;
-}
-console.log(stringSlice(arr, 1, 5));
-
-
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// function stringSlice( string, begin, end , ...element) {
+//     let skisb=[];
+//     let mejtex=[];
+//     let verj=[];
+//
+//     for (let i = 0; i < string.length; i++){
+//         for (let j = begin; j < begin+end; j++){
+//             if (i < begin){
+//                 skisb[i] = string[i];
+//             }
+//
+//             if (begin <= begin+end){
+//                 if (element){
+//                     mejtex = element;
+//                 }else {
+//                     mejtex[i] = string[j];
+//                 }
+//             }
+//             if (begin + end <= i){
+//                 verj[i] = string[i];
+//             }
+//
+//         }
+//     }
+//     string.length=0;
+//     console.log(...skisb);
+//     console.log(...mejtex);
+//     console.log(...verj);
+//     console.log(string);
+//     for (let t = 0; t < skisb.length+mejtex.length+verj.length; t++){
+//
+//     }
+// }
+// stringSlice(arr, 1, 1, "m");
