@@ -20,7 +20,7 @@ function getTodosRequest() {
             allInformation.push(...json);
         })
         .then(function (){
-        htmlStyle(allInformation);
+            createTodos(allInformation);
     })
 }
 getTodosRequest();
@@ -37,7 +37,7 @@ function createTodosRequest(newPublication) {
         .then(response => response.json())
         .then(function (json){
             allInformation.unshift(json);
-            htmlStyle(allInformation);
+            createTodos(allInformation);
             price_input.value = "";
             name_input.value = "";
         } )
@@ -59,7 +59,7 @@ function updateTodosRequest(id, updatedInformation) {
             return json;
         } )
         .then(data=>{
-            htmlStyle(allInformation);
+            createTodos(allInformation);
             price_input.value = "";
             name_input.value = "";
             id_input.value = "";
@@ -74,7 +74,7 @@ function removeTodosRequest(id, i) {
         .then(res => {
             allInformation.splice(i, 1);
             // console.log(allInformation);
-            htmlStyle(allInformation);
+            createTodos(allInformation);
         })
 };
 
@@ -102,7 +102,7 @@ creatList.addEventListener("click", function (){
     }
 });
 
-function htmlStyle(arr) {
+function createTodos(arr) {
     section.innerHTML="";
     for (let i = 0; i < arr.length; i++){
         section.innerHTML += `
