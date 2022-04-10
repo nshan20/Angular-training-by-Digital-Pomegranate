@@ -11,13 +11,15 @@ let name_input = document.querySelector("#name_input");
 let price_input = document.querySelector("#price_input");
 let id_input = document.querySelector("#id_input");
 
+let creatList2 = document.querySelector("#creatList2");
 
 function getTodosRequest() {
     fetch('https://jsonplaceholder.typicode.com/todos/')
         .then(response => response.json())
         .then(function (json){
             allInformation.push(...json);
-        }).then(function (){
+        })
+        .then(function (){
         htmlStyle(allInformation);
     })
 }
@@ -35,30 +37,33 @@ function createTodosRequest(newPublication) {
         .then(response => response.json())
         .then(function (json){
             allInformation.unshift(json);
-            section.innerHTML="";
             htmlStyle(allInformation);
+            price_input.value = "";
+            name_input.value = "";
         } )
 }
 
 function updateTodosRequest(id, updatedInformation) {
     fetch(`https://jsonplaceholder.typicode.com/todos/${id}`,{
         method:"PUT",
-        headers: {
-            'Content-Type': 'application/json'
-        },
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(updatedInformation)
-    }).then(response => response.json())
+    })
+        .then(response => response.json())
         .then(function (json){
-            // console.log(json, "json PUT");
             for (let i = 0; i < allInformation.length; i++){
-                if (allInformation[i].id === id){
+                if (allInformation[i].id === +id){
                     allInformation[i] = json;
                 }
             };
-            section.innerHTML="";
+            return json;
+        } )
+        .then(data=>{
             htmlStyle(allInformation);
-            console.log(updatedInformation);
-        } );
+            price_input.value = "";
+            name_input.value = "";
+            id_input.value = "";
+        });
 }
 
 function removeTodosRequest(id, i) {
@@ -69,12 +74,36 @@ function removeTodosRequest(id, i) {
         .then(res => {
             allInformation.splice(i, 1);
             // console.log(allInformation);
-            section.innerHTML="";
             htmlStyle(allInformation);
         })
 };
 
+function updateElements(id) {
+    for (let i = 0; i< allInformation.length; i++){
+        if(allInformation[i].id === id){
+            id_input.value = allInformation[i].id;
+            name_input.value = allInformation[i].title ;
+            price_input.value = allInformation[i].completed ;
+        }
+    }
+};
+
+creatList.addEventListener("click", function (){
+    if (id_input.value === ""){
+        newPublication.completed = price_input.value;
+        newPublication.title = name_input.value;
+        createTodosRequest(newPublication);
+    }
+    if (id_input.value){
+        updatedInformation.id = id_input.value;
+        updatedInformation.title = name_input.value;
+        updatedInformation.completed = price_input.value;
+        updateTodosRequest(id_input.value, updatedInformation);
+    }
+});
+
 function htmlStyle(arr) {
+    section.innerHTML="";
     for (let i = 0; i < arr.length; i++){
         section.innerHTML += `
             <dov class="product_block">
@@ -88,35 +117,5 @@ function htmlStyle(arr) {
             </dov>
         `;
     }
+
 }
-
-function updateElements(id) {
-    for (let i = 0; i< allInformation.length; i++){
-        if(allInformation[i].id === id){
-            id_input.value = id;
-            name_input.value = allInformation[i].title ;
-            price_input.value = allInformation[i].completed ;
-        }
-    }
-    if (id_input.value){
-        creatList.addEventListener("click", function (){
-            updatedInformation.id = id_input.value;
-            updatedInformation.title = name_input.value;
-            updatedInformation.completed = price_input.value;
-            if (updatedInformation.title !== "" || updatedInformation.completed !== ""){
-                updateTodosRequest(id, updatedInformation);
-            }
-        });
-    }
-
-};
-
-creatList.addEventListener("click", function (){
-    if (id_input.value === ""){
-        newPublication.completed = price_input.value;
-        newPublication.title = name_input.value;
-        createTodosRequest(newPublication);
-        price_input.value = "";
-        name_input.value = "";
-    }
-});
