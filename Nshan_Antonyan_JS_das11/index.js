@@ -5,8 +5,9 @@ function* randomGenerationNumbers(n) {
     }
     for (let i = 0; i<n; i++){
         let random = Math.floor(Math.random()*arry.length);
-        yield arry[random];
+        let arryElement = arry[random];
         arry.splice(random,1);
+        yield arryElement;
     }
 }
 
