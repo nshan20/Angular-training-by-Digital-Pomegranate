@@ -38,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -83,6 +83,12 @@
       <workItem from="1649532957767" duration="3806000" />
       <workItem from="1649579843968" duration="8439000" />
       <workItem from="1649592988744" duration="250000" />
+      <workItem from="1649605956689" duration="491000" />
+      <workItem from="1649684524379" duration="826000" />
+      <workItem from="1649703988201" duration="398000" />
+      <workItem from="1649709396036" duration="205000" />
+      <workItem from="1649709769839" duration="25000" />
+      <workItem from="1649780097941" duration="95000" />
     </task>
     <servers />
   </component>
