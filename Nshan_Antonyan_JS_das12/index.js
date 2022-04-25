@@ -1,27 +1,48 @@
-// let Titan_Button = document.querySelector("#Titan_Button");
-// let Aluminum_Button = document.querySelector("#Aluminum_Button");
-// let Plastic_button = document.querySelector("#Plastic_button");
-
-// let Titan_input = document.querySelector("#Titan_input");
-// let Aluminum_input = document.querySelector("#Aluminum_input");
-// let Plastic_input = document.querySelector("#Plastic_input");
-
-// let Material_spec = document.querySelector("#Material_spec");
-// let Color_spec = document.querySelector("#Color_spec");
-// let Count_spec = document.querySelector("#Count_spec");
-// let button_spec = document.querySelector("#button_spec");
-
-// let arr = [];
-// let arr1 = [];
-// let arr2 = [];
-// let arrSpec = [];
-
+let meshForGoodsMaterials = document.querySelector(".meshForGoodsMaterials");
+let horizontalMaterialLine = document.querySelector(".horizontalMaterialLine");
 class Xanut {
-    constructor() {
-        // this.pieces = pieces;
-        // // this.arr = arr;
-        // this.material = material;
 
+    productsByTypes = [
+        {
+            Material: 'Titan',
+            Color: 'Black',
+            Price: 300,
+            order: "order"
+        },
+        {
+            Material: 'Aluminum',
+            Color: 'Silver',
+            Price: 200,
+            order: "order"
+        },
+        {
+            Material: 'Plastic',
+            Color: 'White',
+            Price: 100,
+            order: "order"
+        }
+    ];
+
+    htmlStil(meshForGoodsMaterials, horizontalMaterialLine){
+        for (let i = 0; i < this.productsByTypes.length; i++){
+            meshForGoodsMaterials.innerHTML += `
+                <div class="horizontalMaterialLine">
+                    <div class="productTitles"><p>Plastic</p></div>
+                    <div class="productTitles"><p>White</p></div>
+                    <div class="productTitles"><p>100$</p></div>
+                    <div class="productTitles productInput"><input type="text" id="Plastic_input"></div>
+                    <div class="productTitles productButton"><button id="Plastic_button${i}" onclick="${this.myFunction}}" >order</button></div>
+                </div>
+            `;
+        }
+        meshForGoodsMaterials.append(meshForGoodsMaterials);
+    }
+    myFunction(){
+        alert();
+    };
+
+
+    constructor() {
         this.arrTitan = [];
         this.arrAluminum = [];
         this.arrPlastic = [];
@@ -59,6 +80,7 @@ class Xanut {
 
     }
 }
+
 
 class Gorcaran {
     constructor(production, arr, material) {
@@ -108,7 +130,11 @@ class Aprank {
     kg = 1;
     prices = 100;
 }
+
+new Xanut().htmlStil(meshForGoodsMaterials, horizontalMaterialLine);
 new Xanut().order();
+new Xanut().myFunction();
+
 // function order( Button, input, arr, material) {
 //     Button.addEventListener("click", function () {
 //         new Xanut(input.value, arr, material).itemSize();
