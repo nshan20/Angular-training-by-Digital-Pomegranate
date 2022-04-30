@@ -1,25 +1,25 @@
-//---------clon------
-// let users ={
-//     name: "nshan",
-//     lastName: "antonyan",
-//     ary: {name2: "valod", lastName2: "antonyan",arry2:{age3: 30}}
-// }
-//
-// let usersClon = clondeDeepObj({},users);
-// users.ary.name="11111";
-// console.log(users);
-// // console.log(typeof usersClon);
-//
-// function clondeDeepObj(dest, obj){
-//     for (let key in obj){
-//         if (typeof obj[key] === "object"){
-//             dest[key] = clondeDeepObj({}, obj[key]);
-//         }else {
-//             dest[key] = obj[key];
-//         }
-//     }
-//     return dest;
-// }
+//---------clon reduqe------
+
+let users ={
+    name: "nshan",
+    lastName: "antonyan",
+    ary: {name2: "valod", lastName2: "antonyan",arry2:{age3: 30}}
+}
+
+let usersClon = clondeDeepObj({},users);
+users.ary.name="11111";
+console.log(users);
+
+function clondeDeepObj(dest, obj){
+    for (let key in obj){
+        if (typeof obj[key] === "object"){
+            dest[key] = clondeDeepObj({}, obj[key]);
+        }else {
+            dest[key] = obj[key];
+        }
+    }
+    return dest;
+}
 
 //------------------------------------
 

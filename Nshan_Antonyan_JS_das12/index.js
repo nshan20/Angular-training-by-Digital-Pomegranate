@@ -25,18 +25,20 @@ class Xanut {
 
     htmlStil(meshForGoodsMaterials, horizontalMaterialLine){
         for (let i = 0; i < this.productsByTypes.length; i++){
+            meshForGoodsMaterials.createElement()
             meshForGoodsMaterials.innerHTML += `
                 <div class="horizontalMaterialLine">
                     <div class="productTitles"><p>Plastic</p></div>
                     <div class="productTitles"><p>White</p></div>
                     <div class="productTitles"><p>100$</p></div>
                     <div class="productTitles productInput"><input type="text" id="Plastic_input"></div>
-                    <div class="productTitles productButton"><button id="Plastic_button${i}" onclick="${this.myFunction}}" >order</button></div>
+                    <div class="productTitles productButton"><button id="Plastic_button${i}" onclick="${this.myFunction}" >order</button></div>
                 </div>
             `;
         }
         meshForGoodsMaterials.append(meshForGoodsMaterials);
     }
+
     myFunction(){
         alert();
     };
