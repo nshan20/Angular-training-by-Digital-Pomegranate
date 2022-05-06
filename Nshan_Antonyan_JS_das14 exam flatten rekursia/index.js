@@ -189,13 +189,9 @@
 // function chain(sum, arry){
 //     let additionAmount = 0;
 //     let multiplicationSum = 0;
-//     for (let i = 0; i < arry.length; i++){
-//         if (i === 0){
-//             additionAmount = arry[i](sum);
-//         }else if (i === 1){
-//             multiplicationSum = arry[i](additionAmount);
-//         }
-//     }
+//     additionAmount = arry[0](sum);
+//     multiplicationSum = arry[1](additionAmount);
+//
 //     console.log(multiplicationSum);
 // }
 // chain(2, [add, mult]);
