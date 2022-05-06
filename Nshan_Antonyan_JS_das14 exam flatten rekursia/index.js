@@ -178,22 +178,20 @@
 //     console.log(fankshn);
 // }
 //
-// function add(num) {
-//     return num + 1;
-// }
-//
-// function mult(num) {
-//     return num * 30;
-// }
-//
-// function chain(sum, arry){
-//     let additionAmount = 0;
-//     let multiplicationSum = 0;
-//     additionAmount = arry[0](sum);
-//     multiplicationSum = arry[1](additionAmount);
-//
-//     console.log(multiplicationSum);
-// }
-// chain(2, [add, mult]);
+function add(num) {
+    return num + 1;
+}
+
+function mult(num) {
+    return num * 30;
+}
+
+function chain(sum, arry){
+    for (let i = 0; i < arry.length; i++) {
+        sum = arry[i](sum);
+    }
+    console.log(sum);
+}
+chain(2, [add, mult]);
 //
 // function drop(num) { return num / 2;}  function doSomethingAsync(num) { return Promise.resolve(num * 3); } chain(10,[drop, doSomethingAsync]);
