@@ -193,5 +193,4 @@ function chain(sum, arry){
     console.log(sum);
 }
 chain(2, [add, mult]);
-//
-// function drop(num) { return num / 2;}  function doSomethingAsync(num) { return Promise.resolve(num * 3); } chain(10,[drop, doSomethingAsync]);
+
