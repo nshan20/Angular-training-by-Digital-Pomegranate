@@ -99,7 +99,7 @@
 //         .then((data) => {
 //             let serv1 = data.data.example1.input;
 //             let testArr = [1,-3,5,-6,10];
-//             calculator(serv1);
+//             calculator(testArr);
 //         });
 // }
 // example();
@@ -177,20 +177,20 @@
 //     let fankshn = fank;
 //     console.log(fankshn);
 // }
+
+// function add(num) {
+//     return num + 1;
+// }
 //
-function add(num) {
-    return num + 1;
-}
-
-function mult(num) {
-    return num * 30;
-}
-
-function chain(sum, arry){
-    for (let i = 0; i < arry.length; i++) {
-        sum = arry[i](sum);
-    }
-    console.log(sum);
-}
-chain(2, [add, mult]);
+// function mult(num) {
+//     return num * 30;
+// }
+//
+// function chain(sum, arry){
+//     for (let i = 0; i < arry.length; i++) {
+//         sum = arry[i](sum);
+//     }
+//     console.log(sum);
+// }
+// chain(2, [add, mult]);
 
